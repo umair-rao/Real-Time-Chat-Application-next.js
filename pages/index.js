@@ -39,6 +39,7 @@ const Auth = () => {
               placeholder="Email"
               className="text-input"
               onChange={(e) => setUsername(e.target.value)}
+              required
             />
           </div>
 
@@ -48,6 +49,7 @@ const Auth = () => {
               placeholder="Password"
               className="text-input"
               onChange={(e) => setSecret(e.target.value)}
+              required
             />
           </div>
 
