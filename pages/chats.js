@@ -24,12 +24,6 @@ export default function Home() {
     }
   }, []);
 
-  useEffect(() => {
-    if (username === "" || secret === "") {
-      router.push("/");
-    }
-  }, [username, secret]);
-
   if (!showChat) return <div />;
 
   return (
