@@ -4,6 +4,7 @@ import { Context } from "../context";
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const ChatEngine = dynamic(() =>
   import("react-chat-engine").then((module) => module.ChatEngine)
@@ -33,8 +34,8 @@ export default function Home() {
 
   return (
     <div className="background">
-            <div>
-        <button>LogOut</button>
+      <div className="logout-btn-div">
+        <Link href='/'><button className="logout-btn">Logout</button></Link>
       </div>
       <div className="shadow">
         <ChatEngine
